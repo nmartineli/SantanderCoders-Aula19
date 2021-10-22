@@ -1,0 +1,56 @@
+<!-- 
+Desafio:
+
+Implementar o módulo calculadora em uma página web simples.
+
+A página deve ter apenas um input e um seletor tipo radio de operação.
+
+1. O usuário digita o primeiro número e aperta um botão enter
+
+2. O sistema guarda o número o e limpa o input
+
+3. O usuário digita o segundo número e aperta o botão enter
+
+4. O sistema guarda o número e limpa o input novamente
+
+5. O usuário aperta o botão igual e a resposta aparece na tela -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <p>
+      Enter one value at a time at the input below and press enter. Choose one
+      operation and press equals to get the results.
+    </p>
+
+    <input type="number" id="calculator--input" />
+
+    <button type="button" id="enter">Enter</button>
+
+    <div>
+      <input type="radio" id="sum" value="+" />
+      <label for="sum">Sum</label>
+
+      <input type="radio" id="subtraction" value="-" />
+      <label for="subtraction">Subtract</label>
+
+      <input type="radio" id="multiply" value="*" />
+      <label for="multiply">Multiply</label>
+
+      <input type="radio" id="divide" value="/" />
+      <label for="divide">Divide</label>
+    </div>
+    <button type="button" id="equals">Equals</button>
+    <div>
+      <h3></h3>
+    </div>
+  </body>
+  <script src="Aula19-atividade.js"></script>
+</html>
